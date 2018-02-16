@@ -11,8 +11,8 @@ function setup() {
 
 function draw(){
   background(0)
+  word();
   moon();
-  squares();
 
 
 
@@ -34,23 +34,25 @@ function draw(){
 
 }
 
-function moon(){
+function word(){
   push();
+  var millisecond = millis();
+    fill(255)
+    textSize(20)
+    text('\n' + millisecond, 5, 470);
+
+
 
   pop();
 
 }
 
 
-function squares(){
+function moon(){
 
   push();
     fill(255,200,0)
     stroke(255,200,0)
     ellipse(250,250,305,305)
-    textSize(300);
-    textAlign(CENTER);
-    stroke(255);
-    text('moon');
   pop();
 }
