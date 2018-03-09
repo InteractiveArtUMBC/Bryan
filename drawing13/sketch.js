@@ -3,14 +3,21 @@ var osc, fft;
 
 
 
+
 function setup() {
+
+
+
 
   createCanvas(windowWidth, windowHeight);
   frameRate(100);
   background(0)
   noCursor();
+  
 
-  osc = new p5.TriOsc(); // set frequency and type
+
+
+  osc = new p5.TriOsc();
   osc.amp(.5);
 
   fft = new p5.FFT();
@@ -76,7 +83,7 @@ if (mouseIsPressed){
 
 
 
-      var colors = ['red', 'orange',];
+      var colors = [ 'orange','red'];
       var color = random(colors);
 
         ellipse (a,i,10,5);
